@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:text="ClienteLogin"
+    android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/cliNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:textIsSelectable="false" />
+    <EditText
+        android:layout_below="@+id/cliNome"
+        android:id="@+id/editNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/cliSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        android:layout_marginTop="150dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/cliSenha" />
+
+    <Button
+        android:id="@+id/buttEntreAsyncTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EntreAsyncTask"
+        android:layout_gravity="center_horizontal" />
+
+</android.support.design.widget.CoordinatorLayout>
